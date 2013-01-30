@@ -1,4 +1,4 @@
-#N canvas 445 150 566 446 10;
+#N canvas 392 159 566 446 10;
 #X obj 23 26 cnv 15 300 400 empty empty empty 20 12 0 14 -128992 -66577
 0;
 #X obj 165 267 image images/background.gif;
@@ -51,7 +51,7 @@
 -1;
 #X obj 170 83 bng 15 250 50 0 empty meldisp9 empty 17 7 0 10 -1 -33289
 -1;
-#N canvas 0 22 917 679 resources 1;
+#N canvas 0 22 917 679 resources 0;
 #X obj 42 28 cnv 15 820 365 empty empty empty 20 12 0 14 -128992 -66577
 0;
 #X obj 32 18 cnv 15 820 365 empty empty empty 20 12 0 14 -233017 -66577
@@ -173,7 +173,7 @@
 0;
 #X obj 458 421 cnv 15 125 60 empty empty empty 20 12 0 14 -233017 -66577
 0;
-#N canvas 582 57 665 451 samples 1;
+#N canvas 582 57 665 451 samples 0;
 #X obj 322 64 readsf~;
 #X obj 424 60 bng 15 250 50 0 empty startsample2 empty 17 7 0 10 -262144
 -1 -1;
@@ -198,7 +198,7 @@
 #X text -88 -58 then fade it in;
 #X text -90 109 fade both samples out;
 #X obj -110 -133 tgl 15 0 empty sample_tgl empty 17 7 0 10 -262144
--1 -1 0 1;
+-1 -1 1 1;
 #X obj -110 -108 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj -110 -56 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144

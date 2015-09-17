@@ -1,6 +1,56 @@
-#N canvas 74 143 409 244 10;
-#X text 100 102 by Christopher Noce;
-#X text 100 88 A generative \, textural composition;
+#N canvas 392 159 566 446 10;
+#X obj 23 26 cnv 15 300 400 empty empty empty 20 12 0 14 -128992 -66577
+0;
+#X obj 165 267 image images/background.gif;
+#X text 341 338 Textures \, no. 1;
+#X text 341 370 by Christopher Noce;
+#X text 341 358 A generative \, textural composition;
+#X obj 308 16 cnv 1 6 100 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X obj 17 19 cnv 15 294 100 empty empty empty 20 12 0 48 -1 -66577
+0;
+#X obj 263 66 bng 30 250 50 0 empty dronedisp1b empty 17 7 0 10 -1
+-33289 -1;
+#X obj 44 45 bng 10 250 50 0 empty dronedisp1c empty 17 7 0 10 -1 -33289
+-1;
+#X obj 88 69 bng 25 250 50 0 empty dronedisp2b empty 17 7 0 10 -1 -33289
+-1;
+#X obj 162 63 bng 15 250 50 0 empty dronedisp2c empty 17 7 0 10 -1
+-33289 -1;
+#X obj 177 63 bng 20 250 50 0 empty dronedisp3b empty 17 7 0 10 -1
+-33289 -1;
+#X obj 172 38 bng 25 250 50 0 empty dronedisp3c empty 17 7 0 10 -1
+-13330 -1;
+#X obj 202 74 bng 15 250 50 0 empty dronedisp4b empty 17 7 0 10 -1
+-33289 -1;
+#X obj 218 73 bng 10 250 50 0 empty dronedisp4c empty 17 7 0 10 -1
+-33289 -1;
+#X obj 232 39 bng 15 250 50 0 empty meldisp1 empty 17 7 0 10 -1 -33289
+-1;
+#X obj 125 92 bng 15 250 50 0 empty meldisp2 empty 17 7 0 10 -1 -33289
+-1;
+#X obj 229 55 bng 35 250 50 0 empty meldisp3 empty 17 7 0 10 -1 -33289
+-1;
+#X obj 70 24 bng 45 250 50 0 empty meldisp4 empty 17 7 0 10 -1 -86277
+-1;
+#X obj 265 45 bng 20 250 50 0 empty meldisp5 empty 17 7 0 10 -1 -33289
+-1;
+#X obj 42 69 bng 45 250 50 0 empty meldisp6 empty 17 7 0 10 -1 -16662
+-1;
+#X obj 141 27 bng 20 250 50 0 empty meldisp7 empty 17 7 0 10 -1 -33289
+-1;
+#X obj 54 47 bng 15 250 50 0 empty dronedisp1a empty 17 7 0 10 -1 -33289
+-1;
+#X obj 116 48 bng 45 250 50 0 empty dronedisp2a empty 17 7 0 10 -1
+-45076 -1;
+#X obj 162 53 bng 10 250 50 0 empty dronedisp3a empty 17 7 0 10 -1
+-33289 -1;
+#X obj 198 43 bng 30 250 50 0 empty dronedisp4a empty 17 7 0 10 -1
+-16662 -1;
+#X obj 123 35 bng 10 250 50 0 empty meldisp8 empty 17 7 0 10 -1 -33289
+-1;
+#X obj 170 83 bng 15 250 50 0 empty meldisp9 empty 17 7 0 10 -1 -33289
+-1;
 #N canvas 0 22 917 679 resources 0;
 #X obj 42 28 cnv 15 820 365 empty empty empty 20 12 0 14 -128992 -66577
 0;
@@ -148,7 +198,7 @@
 #X text -88 -58 then fade it in;
 #X text -90 109 fade both samples out;
 #X obj -110 -133 tgl 15 0 empty sample_tgl empty 17 7 0 10 -262144
--1 -1 0 1;
+-1 -1 1 1;
 #X obj -110 -108 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj -110 -56 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -923,9 +973,14 @@
 #X connect 145 0 144 0;
 #X connect 146 0 134 0;
 #X connect 146 0 134 1;
-#X restore 312 210 pd resources;
-#X obj 102 133 bng 15 250 50 0 textures_start null_start Start 20 8
-0 10 -204786 -1 -1;
-#X obj 162 133 bng 15 250 50 0 textures_stop stop_null Stop 20 8 0
-10 -261234 -33289 -1;
-#X text 100 63 Textures \, no. 1;
+#X restore 344 400 pd resources;
+#X obj 291 20 cnv 15 1 1 empty empty TEXTURES -245 48 0 48 -1 -262144
+0;
+#X obj 346 270 cnv 15 40 40 empty empty empty 20 12 0 14 -128992 -66577
+0;
+#X obj 396 270 cnv 15 40 40 empty empty empty 20 12 0 14 -128992 -66577
+0;
+#X obj 343 267 bng 40 250 50 0 textures_start empty BEGIN 0 55 0 14
+-1 -33289 -1;
+#X obj 393 267 bng 40 250 50 0 textures_stop empty CEASE 0 55 0 14
+-1 -33289 -1;
